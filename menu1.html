@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: firebrick;
+      }
+
+      .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid black;
+        padding: 162px;
+        background-color: bisque;
+        border-radius: 156px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdmTB51ghBxWhYEjril2vdfIc9v4dJK2Uow&usqp=CAU);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .btn1 {
+        margin-top: 184px;
+        width: 367px;
+        height: 50px;
+        border-radius: 16px;
+        font-size: 30px;
+        font-weight: 900;
+        border: inset;
+      }
+      .btn2 {
+        margin: 20px;
+        width: 367px;
+        height: 50px;
+        border-radius: 16px;
+        font-size: 30px;
+        font-weight: 900;
+        border: inset;
+      }
+    </style>
+    <script src="script2.js"></script>
+  </head>
+  <body onload="menufunc()">
+    <div class="container">
+      <div class="layout">
+        <button class="btn1" id="bttn1" onclick="location.href='sendfile.html'">
+          Send Mail
+        </button>
+
+        <button class="btn2">Read Mail</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: linear-gradient(
+          180deg,
+          rgba(13, 20, 54, 1) 0%,
+          rgba(40, 57, 119, 1) 30%,
+          rgba(63, 69, 125, 1) 50%,
+          rgba(40, 57, 119, 1) 70%,
+          rgba(20, 36, 93, 1) 100%
+        );
+      }
+
+      .btnh1 {
+        position: absolute;
+        top: 50%;
+        left: 47%;
+      }
+      .photo {
+        position: absolute;
+        top: 5%;
+        left: 43%;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px rgba(5, 5, 5, 0.5);
+      }
+      .textbox {
+        position: absolute;
+        top: 65%;
+        left: 84%;
+      }
+      .button {
+        display: inline-block;
+        padding: 0.75rem 1.25rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .button:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0cf;
+        border-radius: 10rem;
+        z-index: -2;
+      }
+      .button:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #008fb3;
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+      .button:hover {
+        color: #fff;
+      }
+      .button:hover:before {
+        width: 100%;
+      }
+
+      .btnH {
+        background-color: #d2ddd9;
+        border: 2px solid #4caf50;
+        color: white;
+        padding: 1px 1px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 27px;
+        margin: 0px 0px;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+       .btnp1 {
+        position: absolute;
+        bottom: 5%;
+        left: 95%;
+      }
+      .btnc1 {
+        position: absolute;
+        bottom: 5%;
+        left: 84%;
+      }
+      .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+          -225deg,
+          #231557 0%,
+          #44107a 29%,
+          #ff1361 67%,
+          #fff800 100%
+        );
+        position: absolute;
+        top: 18%;
+        left: 25%;
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 150% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 100px;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      .btnH .btnP .btnC {
+        margin-top: 184px;
+        width: 367px;
+        height: 50px;
+        border-radius: 16px;
+        font-size: 30px;
+        font-weight: 900;
+        border: inset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="photo">
+      <img
+        src="logo.png.png"
+        alt="Paris"
+        width="190"
+        height="145"
+        border-radius:
+        8px;
+      />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="animate-charcter">EYE-DEAL AID</h3>
+        </div>
+      </div>
+    </div>
+    <div class="homepage">
+      <div class="btnh1">
+        <button class="button" id="lbtn" onclick="location.href='Login.html'">
+          <a href="login.html" alt="Broken Link"> LOGIN </a>
+        </button>
+      </div>
+
+      <div class="textbox" >
+      <textarea id="textbox" rows="9" cols="25">
+      INSTRUCTIONS
+to add a new paragraph in your mail say para -
+to separate words with comma say comma -    
+to end a line say fullstop 
+</textarea
+      >
+    </div>
+
+    <div class="btnp1">
+      <button class="btnP">
+        <a href="policy.html" alt="Broken Link">policy </a>
+      </button>
+    </div>
+
+    <div class="btnc1">
+      <button class="btnC">
+        <a href="terms.html" alt="Broken Link">Terms & Conditions </a>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
